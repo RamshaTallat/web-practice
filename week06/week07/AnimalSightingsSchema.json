@@ -1,0 +1,31 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Animal Sightings Schema",
+    "description": "A schema for validating animal sightings data.",
+    "type": "object",
+    "properties": {
+      "sightings": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "species": { "type": "string" },
+            "location": {
+              "type": "object",
+              "properties": {
+                "latitude": { "type": "number", "minimum": -90, "maximum": 90 },
+                "longitude": { "type": "number", "minimum": -180, "maximum": 180 }
+              },
+              "required": ["latitude", "longitude"]
+            },
+            "date": { "type": "string", "format": "date" },
+            "observer": { "type": "string" },
+            "notes": { "type": "string" }
+          },
+          "required": ["species", "location", "date", "observer"]
+        }
+      }
+    },
+    "required": ["sightings"]
+  }
+  

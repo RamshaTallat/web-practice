@@ -1,0 +1,37 @@
+{
+    "$schema":  "AnimalSightingsSchema.json",
+    "sightings": [
+      {
+        "id":1,
+        "species": "Tiger",
+        "location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "date": "2024-03-15",
+        "observer": "John Doe",
+        "notes": "Sighted near the forest edge."
+      },
+      {
+        "species": "Snow Leopard",
+        "location": {
+          "latitude": 27.9881,
+          "longitude": 86.9250
+        },
+        "date": "2024-03-14",
+        "observer": "Jane Smith",
+        "notes": "Found resting on a rocky outcrop."
+      },
+      {
+        "species": "Pangolin",
+        "location": {
+          "latitude": -2.9761,
+          "longitude": 104.7759
+        },
+        "date": "2024-03-13",
+        "observer": "David Brown",
+        "notes": "Spotted digging for ants in the forest floor."
+      }
+    ]
+  }
+  
